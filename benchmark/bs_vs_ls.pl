@@ -1,7 +1,6 @@
 #!perl -w
 use strict;
-use FindBin qw($Bin);
-use lib 'lib', $Bin;
+use lib 'lib';
 
 use Benchmark qw(timethese cmpthese);
 use Test::More;
