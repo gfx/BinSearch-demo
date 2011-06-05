@@ -6,7 +6,7 @@ use Test::More;
 use LinearSearch;
 
 no_leaks_ok {
-    LinearSearch::find(0, 1, 0, 2) == 1 or die;
+    LinearSearch::find(0, [1, 0, 2]) == 1 or die;
 };
 
 done_testing;
