@@ -9,7 +9,7 @@ use LinearSearch;
 
 my @values = (1 .. 100000);
 
-foreach my $value(100, 55555, 100000) {
+foreach my $value(1000, 55555, 100000) {
     is LinearSearch::find($value, \@values), BinSearch::find($value, \@values), "for $value";
     cmpthese timethese 10000, {
         line_s => sub {
